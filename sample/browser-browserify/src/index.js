@@ -1,6 +1,7 @@
 'use strict'
 
-const IPFS = require('ipfs')
+// const IPFS = require('../../packages/ipfs')
+ const IPFS = import('../../../packages/ipfs/dist/index.min.js')
 
 document.addEventListener('DOMContentLoaded', async () => {
   const node = await IPFS.create({
