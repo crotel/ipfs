@@ -49,5 +49,21 @@
 
     catFile()
   </code>
+  <input type=text id=newcontent>
+  <input type=text id=newresult>
+  <button id=newpost onclick="addFile()">post</button>
+<script>
+  //const post=()=>{
+ async function addFile () {
+   const content = document.querySelector("#newcontent").value;
+      const { cid } = await node.add(content)
+      console.log('successfully stored', cid)
+      document.querySelector("#newresult").value ="successfully stored" + cid;
+    }
+
+    
+//}
+//document.querySelector("#newpost").addEventlistener.
+  </script>
 </body>
 </html>
