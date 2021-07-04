@@ -58,7 +58,7 @@
    const content = document.querySelector("#newcontent").value;
       const { cid } = await node.add(content)
       console.log('successfully stored', cid)
-      document.querySelector("#newresult").value ="successfully stored\n" +  cid;
+      document.querySelector("#newresult").textContent ="successfully stored\n" +  cid;
     }
 
     
