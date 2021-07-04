@@ -49,8 +49,8 @@
 
     catFile()
   </code>
-  <input type=text id=newcontent>
-  <input type=text id=newresult>
+  <textarea type=text id=newcontent></textarea><br>
+  <pre type=text id=newresult></pre>
   <button id=newpost onclick="addFile()">post</button>
 <script>
   //const post=()=>{
@@ -58,7 +58,7 @@
    const content = document.querySelector("#newcontent").value;
       const { cid } = await node.add(content)
       console.log('successfully stored', cid)
-      document.querySelector("#newresult").value ="successfully stored" + cid;
+      document.querySelector("#newresult").value ="successfully stored\n" +  cid;
     }
 
     
